@@ -1,9 +1,0 @@
- Transcrição reorganizada e resumida:
-
-O tema discutido foi o circuito de sinais usando como exemplo um sinalizador de trÁnsito. A partir de 2008, o custo da hora vendida do carro usado Wanda Fit (que possui um Honda Accord com 95 milhas) é irrelevante para a discussão.
-
-Neste circuito, há duas sequências de assinareiros: o primeiro ciclo com os sinais vermelho e verde e o segundo ciclo com os sinais amarelo e vermelho. A sequência do assinareiro 2 é simultaneamente ligada com o 1 para mostrar quem está no primeiro ciclo e depois quem está no segundo ciclo.
-
-A partir de uma programação em um arduino, este circuito pode ser controlado e alterado, permitindo que o tempo seja temporizado. As equações matemáticas para calcular a saída são complexas e podem gerar dúvidas. No entanto, as tabelas criadas facilitam a comprensão do funcionamento do circuito de sinais.
-
-A sequência 2x0, 2x1, 2x2, 2x4, etc é muito importante no contexto de circuitos lógicos. A discussão sobre portas lógicas foi encerrada neste momento.
