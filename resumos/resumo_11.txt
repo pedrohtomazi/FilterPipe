@@ -1,0 +1,16 @@
+ O texto abaixo é uma transcrição de aula técnica sobre sistemas numerais, com foco no sistema posicional e binaário. A seguir, um resumo didático organizado da matéria:
+
+**Sistema Posicional:**
+- O sistema decimal é composto por 0 a 9 elementos, e possui uma propriedade posicional, onde o valor de cada número se baseia em sua posição na linha.
+- Para descobrir o valor de um número no sistema posicional, basta multiplicar seu expoente (posição) por uma potência do número de base (10), e somar os resultados obtidos para todas as posições, considerando que qualquer número elevado a 0 é igual a 1.
+- Esse método também pode ser aplicado em outros sistemas numerais com propriedades posicionais.
+
+**Binaário:**
+- O sistema binaário é composto por dois elementos: 0 e 1.
+- Para transformar um número binário para decimal, multiplica-se cada número (0 ou 1) por uma potência da base binária (2), de acordo com sua posição, começando pela direita.
+- Multiplicar um número pelo zero não altera seu valor; multiplicar por um não altera seu valor nem na quantidade, mas sim no tipo de operação que será realizada.
+- Para transformar decimal para binário, divide-se o número por 2 repetidamente até chegar em um número inteiro menor ou igual a 1, registrando os restos da divisão (0 ou 1) da esquerda para direita, de acordo com a ordem das divisões.
+- Há uma convenção para representar números negativos no sistema binaário: adicionando um ponto à esquerda, antes dos dígitos binários, indicando que se deseja representar o valor absoluto do número.
+
+**Conclusão:**
+- Nesse caso, aprendemos a converter números de um sistema para outro (decimal para binaário e vice-versa) usando a propriedade posicional de cada sistema, e também como transformar números negativos em binaário.

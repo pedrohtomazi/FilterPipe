@@ -1,0 +1,10 @@
+ **Resumo:**
+
+Aula sobre operações lógicas XOR e XNOR com uma entrada negada e sua aplicação em um circuito eletrônico.
+
+- A saída de um XOR é negada quando todas as entradas são iguais, mas ao utilizar um XNOR, se uma das entradas for negada, o resultado seria diferente.
+- Quando uma entrada possui um trêsseis em cima, significa que a variável atual está sendo negada. Se houver dois trêsseis em cima, isso indica que ambas as entradas estão negadas e a saída seria invertida.
+- É possível ter duas entradas negadas em um XNOR.
+- Aplicação prática: exemplo de um carrinho controlado por Arduino seguindo uma linha preta, onde o carrinho tem 100 sujes e precisa se movimentar ao longo da linha seguindo uma sinalização. Além disso, foram mencionados sumôbots (robôs) que utilizam serra laser em batalhas entre si e brincadeiras com robôs controlados remotos na internet.
+- Ao longo do curso, o aluno deve aprender sobre a encadeamento de componentes eletrônicos e o processo de projeto de circuito para uma compreensão mais profunda da funcionamento das saídas baseadas em sensores. O foco será retornar ao assunto de portas lógicas.
+- A primeira tabelinha apresentada ilustra o funcionamento do XNOR com entrada IBC sem negação de variáveis, onde a saída depende da premissa que duas variáveis iguais dão na saída.

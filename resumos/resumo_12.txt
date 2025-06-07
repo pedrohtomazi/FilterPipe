@@ -1,0 +1,34 @@
+ Transcrição organizada e reescrita da aula técnica sobre operações matemáticas binárias:
+
+Um dos segredos é saber usar a sequência 2, 1, 2, 2, 2, 2 para realizar operações. Por exemplo, o valor 23 pode ser representado como uma sequência de subtração por 2. Com isso, é possível chegar ao resultado desejado:
+
+- Subtrair 2 do valor 23, resultando em 15 (23 - 2 = 15)
+- Repetir a mesma operação com o resultado anterior até que se obtenha um número menor ou igual a 2:
+	* Subtração de 2 em 15: 13
+	* Subtração de 2 em 13: 11
+	* Subtração de 2 em 11: 9
+	* Subtração de 2 em 9: 7
+	* Subtração de 2 em 7: 5
+	* Subtração de 2 em 5: 3
+	* Repetir a mesma operação com o resultado anterior até que se obtenha um número igual a 2 (a última subtração é feita duas vezes):
+		+ Subtração de 2 em 3: 1
+		+ Subtração de 2 em 1: 0
+- Por fim, se contam os números que foram obtidos na sequência de subtrações, o resultado é a representação binária do número original. Neste caso, a sequência obteve os números 1, 0, 1, 1, 1, o que corresponde à representação binária de 23 (1 x 2^4 + 0 x 2^3 + 1 x 2^2 + 1 x 2^1 + 1 x 2^0 = 16 + 0 + 4 + 2 + 1 = 23)
+
+Para garantir que o resultado final seja inteiro, é possível trocar as operações de subtração por multiplicação pela quantidade em que a sequência foi dividida. Por exemplo, para encontrar a representação binária de um número 10, você pode dividi-lo pela sequência 2, 5 e multiplicar o resultado por cada número da sequência de acordo com a quantidade em que foi dividido:
+
+- Dividindo 10 pela sequência 2, 5, resulta em 2 com resto 2. Multiplicando pelo primeiro número da sequência, obtém-se o valor 4 (4 x 2 = 8). Com isso, basta dividir o restante por 5, resultando em 0 com resto 2 (2 / 5 = 0 R 2)
+- Para a representação binária, basta contar os números obtidos na sequência de divisões: 1, 0. Com isso, a representação binária do número 10 é 1010
+
+Quando se for usar o processo inverso (conversão de uma representação binária para decimal), basta multiplicar cada número da sequência pela potência correspondente de 2 e somar os resultados. Por exemplo, para converter a sequência 1010 em decimal, você pode obter o valor assim:
+
+- 1 x 2^3 = 8
+- 0 x 2^2 = 0
+- 1 x 2^1 = 2
+- 0 x 2^0 = 0
+- Com isso, a sequência se transforma no número decimal 8 + 0 + 2 = 10
+
+Para garantir que o resultado obtenido seja correto, é possível seguir as regrinhas mencionadas anteriormente:
+
+- Se uma soma for par, o resultado é zero mais um. Se uma soma for ímpar, ou seja, tem quantidade de números ímpares, o resultado é a metade do número obtido na última iteração da contagem dos números
+- Quando se realizar a soma de números 1 em quantidade ímpar, o resultado é zero apenas quando há um número par no meio da sequência. Neste caso, o zero deve ser adicionado e o número par do meio deve subir uma unidade

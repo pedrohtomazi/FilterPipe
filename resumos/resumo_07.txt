@@ -1,0 +1,13 @@
+ Aula de Sinalização em Circuito Integrado
+
+   Neste exemplo, estamos analisando um circuito que utiliza os sinais: Verde (G), Amarelo (Y) e Vermelho (R).
+
+   - Inicie pelo verde 1 e vermelho 2.
+   - Um no sinal negativo estará com o verde, enquanto outro estaria com o vermelho.
+   - Em seguida, mude do verde para amarelo.
+   - Enquanto isso, o vermelho continua ligado.
+   - A mudança acontece entre amarelo e vermelho, se passando do primeiro para o segundo.
+   - Caso esteja dentro de um botão, não entrar no caso. Estamos pensando na sequência do ciclo das luzes.
+   - Será utilizado um servidor temporizador. Os sinais permanecerão ligados por um determinado tempo.
+   - O ciclo verde e o vermelho demora mais do que o amarelo, pois este último serve para indicar que vai fechar.
+   - Em Curitiba, o amarelo significa a mesma coisa que acelera. É importante sempre considerar as coisas que pioram a situação, como dirigir sob influência de aparelhos móveis.
