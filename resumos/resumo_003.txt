@@ -1,0 +1,3 @@
+🔹 Resumo 003 - ✅ Útil técnico
+
+Resumo: O texto discute sobre lógica digital e circuitos, apresentando exemplos de simplificação de circuitos utilizando portas lógicas como NOR e AND. Além disso, é mencionado o uso de sensores para detectar a temperatura e potência, bem como a representação de estados lógicos com 0 (desligado) e 1 (ligado).

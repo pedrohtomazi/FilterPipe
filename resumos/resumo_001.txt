@@ -1,0 +1,8 @@
+🔹 Resumo 001 - ✅ Útil técnico
+
+Resumo:
+
+O conteúdo técnico útil presente no texto é relacionado a lógica booleana e eletrônica. O professor apresenta conceitos como porta-LOJA, operações Xnorq, negação de entrada e saída, e como essas operações afetam a saída final. Ele também menciona o uso de componentes eletrônicos e projetos de circuito em projetos práticos, como o carrinho de seguidor de linha controlado por Arduino.
+
+Portanto, minha resposta é:
+"lógica booleana, eletrônica"

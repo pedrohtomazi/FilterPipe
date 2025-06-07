@@ -1,0 +1,9 @@
+🔹 Resumo 004 - ✅ Útil técnico
+
+Resumo:
+
+* O texto é sobre identificar as portas e saídas de um sistema de alarme com dois sensores (A e B) e quatro LEDs (branco, azul, vermelho e verde).
+* A condicional para que o alarme seja disparado é quando ambos os sensores (A e B) estiverem acionados.
+* O alarme está associado ao sensor de movimento e só será ativado se o alarme estiver ligado e o sensor de movimento estiver acionado.
+
+RUÍDO_DESCARTAR

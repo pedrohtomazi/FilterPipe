@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 
 # --- Configurações (poderiam vir de config.py) ---
-MODELO_OLLAMA_REFINAMENTO = "mixtral" # Modelo para refinamento final (pode ser diferente do de resumo)
+MODELO_OLLAMA_REFINAMENTO = "llama3" # Modelo para refinamento final (pode ser diferente do de resumo)
 
 # Temas e palavras-chave (para agrupamento e filtragem)
 TEMAS = {
@@ -31,7 +31,7 @@ def filtrar_e_agrupar_resumos(resumo_dir):
             conteudo_completo = f.read().strip()
 
         # Extrai a classificação e o conteúdo do resumo
-        match = re.match(r"🔹 (Resumo_\d+.*?) - (✅ Útil técnico|❌ Ruído|⚠️ Parcial)\n\n(.*)", conteudo_completo, re.DOTALL)
+        match = re.match(r"🔹 (Resumo[_\s]\d+.*?) - (✅ Útil técnico|❌ Ruído|⚠️ Parcial)\n\n(.*)", conteudo_completo, re.DOTALL)
         if not match:
             print(f"Aviso: Formato inesperado para o arquivo {arq_nome}. Pulando.")
             continue
@@ -81,24 +81,32 @@ def refinar_markdown_com_ollama(input_md_path, output_md_path):
         conteudo_md = f.read()
 
     prompt_refinamento = f"""
-    Você é um revisor técnico de alto nível, especializado em clareza e precisão para documentos didáticos.
-    Revise o seguinte resumo de aula técnica em Markdown.
-    Seu objetivo é:
-    1.  Corrigir quaisquer erros técnicos ou imprecisões remanescentes.
-    2.  Melhorar a clareza, concisão e fluidez do texto.
-    3.  Garantir que a formatação Markdown (cabeçalhos, listas, negrito) esteja impecável e coerente.
-    4.  Eliminar qualquer repetição desnecessária ou redundância.
-    5.  Assegurar que o tom seja profissional e didático.
-    6.  Não adicione informações novas, apenas refine as existentes.
-    7.  Mantenha a estrutura de tópicos e sub-tópicos.
+Sua tarefa é corrigir e reescrever um documento Markdown em Português do Brasil. O documento original contém erros técnicos, de digitação e seções irrelevantes.
 
-    Resumo a refinar:
-    \"\"\"
-    {conteudo_md}
-    \"\"\"
+REGRAS ESTRITAS:
+1.  **CORRIJA O CONTEÚDO TÉCNICO:** Corrija todas as informações, lógicas e cálculos que estiverem errados. Substitua palavras sem sentido (ex: 'Zoukê', 'nárdo', 'schusnor') pela palavra técnica correta, se o contexto permitir.
+2.  **MANTENHA A ESTRUTURA:** Preserve 100% da estrutura de cabeçalhos Markdown (`## 🧠 Tópico` e `### 📌 Resumo XXX`). Não junte ou mescle seções de resumo.
+3.  **REESCREVA COM CLAREZA:** Melhore a clareza e a fluidez do texto, mas NÃO RESUMA. O objetivo é uma versão corrigida e melhorada, com um nível de detalhe similar ao original.
+4.  **REMOVA RUÍDO:** Se uma seção inteira (`### 📌 Resumo XXX`) for apenas uma história pessoal ou anedota não-técnica (ex: sobre dirigir, animais de estimação, etc.), remova a seção inteira, incluindo seu cabeçalho.
+5.  **IDIOMA:** A saída final deve ser inteiramente em Português do Brasil.
 
-    Retorne APENAS o resumo final revisado em formato Markdown.
-    """
+A seguir, um exemplo de como você deve transformar o texto:
+
+---EXEMPLO DE ENTRADA---
+### 📌 Resumo 013
+Processador é responsável por executar microcódigos no LAN e pegar elemento no Zoukê. Não há questões ativas na prova.
+---EXEMPLO DE SAÍDA CORRIGIDA---
+### 📌 Resumo 013
+O processador é responsável por executar microcódigos. Também é mencionado que não haverá questões discursivas ("ativas") na prova do Blackboard.
+---FIM DO EXEMPLO---
+
+Agora, processe o documento completo a seguir. Retorne APENAS o documento Markdown final e corrigido.
+
+DOCUMENTO ORIGINAL:
+\"\"\"
+{conteudo_md}
+\"\"\"
+"""
 
     print(f"  ⏳ Aplicando refinamento com {MODELO_OLLAMA_REFINAMENTO} (isso pode levar um tempo)...", end='', flush=True)
 

@@ -1,0 +1,3 @@
+🔹 Resumo 011 - ✅ Útil técnico
+
+RESUMO: O texto discute a conversão de números entre sistemas de numeração (binário e decimal) e apresenta um método para realizar essa conversão, usando uma tabela de correspondência entre valores binários e seus equivalentes decimais. Além disso, são mencionadas regras para somar números em diferentes bases numéricas.

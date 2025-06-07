@@ -9,61 +9,47 @@ MODELO_OLLAMA = "mistral" # ou outro modelo que você preferir
 PALAVRAS_TECNICAS = ["tabela verdade", "porta lógica", "and", "or", "xor", "circuito", "sensor", "binário", "arduino", "processador", "memória", "barramento"]
 PALAVRAS_RUIDO = ["moza", "trânsito", "conversas", "boneco", "pet", "telefone", "Curitiba", "motorista", "Uber", "dirigir"] # Adicionadas mais palavras-chave de ruído
 
-def classificar_texto(texto):
-    """Classifica um texto como útil técnico, ruído ou parcial baseado em palavras-chave."""
-    texto_lower = texto.lower()
-
-    score_tecnico = sum(texto_lower.count(p) for p in PALAVRAS_TECNICAS)
-    score_ruido = sum(texto_lower.count(p) for p in PALAVRAS_RUIDO)
-
-    if score_tecnico > score_ruido * 1.5: # Prioriza técnico se houver uma clara vantagem
-        return "✅ Útil técnico"
-    elif score_ruido > score_tecnico * 1.5: # Prioriza ruído se houver uma clara vantagem
-        return "❌ Ruído"
-    elif score_tecnico > 0: # Se houver algum termo técnico e não for predominantemente ruído
-        return "✅ Útil técnico"
-    elif score_ruido > 0: # Se houver algum termo de ruído e não for predominantemente técnico
-        return "❌ Ruído"
-    else:
-        return "⚠️ Parcial" # Para casos ambíguos ou sem palavras-chave claras
-
-def resumir_e_classificar_bloco(conteudo_bloco, model=MODELO_OLLAMA):
+def resumir_e_classificar_bloco(conteudo_bloco, model="llama3"):
     """
-    Chama o Ollama para resumir um bloco e classifica o resumo.
-    Retorna o resumo gerado e sua classificação.
+    Pede à IA para retornar OU um resumo técnico OU uma palavra-chave de descarte.
     """
-    prompt_instrucao = """
-    Você é um assistente especialista em transcrever e organizar aulas técnicas.
-    O texto a seguir veio de uma transcrição de aula com erros de fala.
-    Reescreva o conteúdo com clareza, mantendo APENAS os pontos técnicos e eliminando completamente repetições, pausas, interjeições e CONTEÚDO NÃO TÉCNICO (conversas paralelas, anedotas, discussões não relacionadas ao assunto principal).
-    Retorne um resumo estruturado e didático, focado na explicação técnica.
-    """
+    prompt_instrucao = f"""Sua tarefa é analisar o texto de uma transcrição de aula e retornar uma de duas coisas. Siga as regras com precisão.
 
+REGRAS:
+1. Se o texto contiver conteúdo técnico útil (lógica, hardware, programação, matemática), resuma estes pontos em português. Sua resposta deve ser APENAS o resumo.
+2. Se o texto for primariamente uma conversa pessoal, anedota, ou ruído irrelevante, sua resposta deve ser APENAS a palavra-chave exata: RUÍDO_DESCARTAR
+
+Não inclua nenhuma outra palavra, explicação ou formatação na sua resposta.
+
+Texto para análise:
+\"\"\"
+{conteudo_bloco}
+\"\"\"
+"""
     payload = {
         "model": model,
-        "messages": [
-            {"role": "system", "content": "Você é um assistente especialista em transcrever e organizar aulas técnicas."},
-            {"role": "user", "content": prompt_instrucao + "\n\n" + conteudo_bloco}
-        ],
+        "messages": [{"role": "user", "content": prompt_instrucao}],
         "stream": False
     }
 
     try:
-        response = requests.post("http://localhost:11434/api/chat", json=payload, timeout=300) # Aumentar timeout
-        response.raise_for_status() # Lança exceção para erros HTTP
-        resumo_gerado = response.json()["message"]["content"]
-        classificacao = classificar_texto(resumo_gerado)
-        return resumo_gerado, classificacao
-    except requests.exceptions.ConnectionError as e:
-        print(f"Erro de conexão com o Ollama: {e}. Certifique-se de que o Ollama está rodando e o modelo '{model}' está baixado.")
-        return None, "❌ Erro"
-    except requests.exceptions.Timeout:
-        print(f"Timeout ao conectar ou receber resposta do Ollama para o modelo '{model}'.")
-        return None, "❌ Erro"
+        response = requests.post("http://localhost:11434/api/chat", json=payload, timeout=300)
+        response.raise_for_status()
+        resumo_gerado = response.json()["message"]["content"].strip()
+
+        # Lógica de classificação mais estrita
+        if resumo_gerado == "RUÍDO_DESCARTAR":
+            classificacao = "❌ Ruído"
+            resumo = "Bloco classificado como ruído e descartado." 
+        else:
+            classificacao = "✅ Útil técnico"
+            resumo = resumo_gerado
+
+        return resumo, classificacao
+
     except requests.exceptions.RequestException as e:
         print(f"Erro na requisição ao Ollama: {e}")
         return None, "❌ Erro"
-
 def resumir_blocos(input_dir, output_dir):
     """
     Processa todos os arquivos de bloco em um diretório,
@@ -96,3 +82,20 @@ if __name__ == "__main__":
         resumir_blocos(sys.argv[1], sys.argv[2])
     else:
         print("Uso: python scripts/resumo_e_classificacao.py <diretorio_entrada_blocos> <diretorio_saida_resumos>")
+        
+def limpar_bloco_com_ia(texto_bloco, model="llama3"):
+    """Usa um modelo de IA para remover ruídos de fala de um bloco de texto."""
+    prompt_instrucao = """Sua única tarefa é pegar o texto a seguir, que é parte de uma transcrição de aula, e remover apenas as interjeições, hesitações, palavras de preenchimento (como 'né', 'tipo', 'então', 'aham') e repetições. NÃO altere o conteúdo técnico nem reformule frases. Retorne APENAS o texto limpo."""
+
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": f"{prompt_instrucao}\n\n---TEXTO---\n{texto_bloco}"}],
+        "stream": False
+    }
+    try:
+        response = requests.post("http://localhost:11434/api/chat", json=payload, timeout=300)
+        response.raise_for_status()
+        return response.json()["message"]["content"].strip()
+    except requests.exceptions.RequestException as e:
+        print(f"\nAviso: Falha na limpeza com IA do bloco. Usando texto original. Erro: {e}")
+        return texto_bloco
