@@ -1,0 +1,101 @@
+--- INÍCIO DA EXTRAÇÃO DO PPTX ---
+
+--- SLIDE 1 ---
+Tópicos Principais
+
+--- SLIDE 2 ---
+O que relembrar
+Binários Decimais Hexadecimais Conversões Operações com Binários
+
+--- SLIDE 3 ---
+Sistema de Numeração Posicional Ponderado
+
+--- SLIDE 4 ---
+Decimal (dígitos 0-9)
+
+--- SLIDE 5 ---
+Decimal (dígitos 0-9)
+
+--- SLIDE 6 ---
+Binária (dígitos 0 e 1)
+
+--- SLIDE 7 ---
+Binária (dígitos 0 e 1)
+
+--- SLIDE 8 ---
+Conversão Decimal-Binária
+Realizar divisões sucessivas por dois. Os valores dos restos das divisões lidos ao contrário fornecem o número desejado.
+
+--- SLIDE 9 ---
+CONVERSÃO DE BASES
+                  DECIMAL PARA BINÁRIO
+
+--- SLIDE 10 ---
+Convertendo Sistemas Numéricos
+É possível realizar conversões utilizando-se de métodos de soma dos bits utilizáveis: 103         (64)(32) (16)   (8)   (4)   (2)   (1)    1     1      0      0      1     1      1    64+32                                96+4                                    100+2                                            102+1  =  103
+
+--- SLIDE 11 ---
+Convertendo Sistemas Numéricos
+É possível realizar conversões utilizando-se de métodos de soma dos bits utilizáveis: 2177    1       0      0     0     1     0   0   0   0  0  0  1 (2048)(1024)(512)(256)(128)(64)(32)(16) (8)(4)(2)(1) 2048+128                                                                                                2176+1 = 2177
+
+--- SLIDE 12 ---
+Convertendo Sistemas Numéricos
+É possível realizar conversões utilizando-se de métodos de substituição          1   1   0   0   1   1   1    (64)(32) (16)   (8)   (4)   (2)   (1)      64+32+  0  +   0   + 4  + 2 +  1  =  103     1       0      0     0     1     0   0   0   0  0  0  1  (2048)(1024)(512)(256)(128)(64)(32)(16) (8)(4)(2)(1)   2048 +   0   +   0  +   0  + 128 + 0 + 0  + 0 + 0+0+ 0+1=2177    212                                          28                                            20
+
+--- SLIDE 13 ---
+Conversão Decimal-Binária
+Procurar na tabela o primeiro expoente menor do que o número a converter. A seguir subtrair o número a converter do valor resultante deste expoente. Realizar esta operação sucessivamente até determinar quais os expoentes de base dois a serem utilizados para formarem o número.
+
+--- SLIDE 14 ---
+Conversão Decimal-Binária
+
+--- SLIDE 15 ---
+Conversão Binária-Decimal
+
+--- SLIDE 16 ---
+CONVERSÃO DE BASES
+                  BINÁRIO PARA DECIMAL
+
+--- SLIDE 17 ---
+SEMPRE BUSCAMOS O VALOR MAIOR QUE O NÚMERO MAIS PRÓXIMO. COMO É MAIOR, NÃO SOMA, INICIA-SE COM 0.  EX: 51(10)   NESTE CASO O 64 É O NÚMERO MAIS PRÓXIMO MAIOR, ENTÃO 0 NA COLUNA DO 26  32 É MENOR que 51 , nesse caso vai 1 16 + 32 = 48, CONTINUA MENOR que 51 ENTÃO SOMA (COLOCA 1). 8 + 48 = 56, NÃO SOMA, POIS 56 É MAIOR QUE 51 (COLOCA 0).  4 + 48 = 52, TAMBÉM NÃO SOMA, POIS 52 TAMBÉM É MAIOR QUE 51 (COLOCA 0). 2 + 48 = 50, COMO 50 É MENOR SOMA (COLOCA 1). 1 + 48 = 49, COMO 49 É MENOR (COLOCA 1).          51(10) = 0110011(2) OU SIMPLESMENTE 110011(2)
+
+--- SLIDE 18 ---
+NO CASO CONTRÁRIO SE TEMOS O VALOR BINÁRIO MAS QUEREMOS SABER O VALOR EM DECIMAL.  EX: 1100110(2)   SIMPLESMENTE SOMAMOS ONDE POSSUI 1 NA COLUNA E IGNORAMOS ONDE POSSUI 0.           SOMA-SE: 64 + 32 + 4 + 2 = 102(10)  LOGO,  1100110(2) = 102(10)
+
+--- SLIDE 19 ---
+Soma
+
+--- SLIDE 20 ---
+Soma - Exemplo
+Decimal                                        Binário
+
+--- SLIDE 21 ---
+Subtração
+Subtração de dois números em base 2  Regras de subtração 0 - 0 = 0 0 - 1 = 1 (empresta 2) 1 - 0 = 1 1 - 1 = 0
+
+--- SLIDE 22 ---
+Subtração - Exemplo
+Decimal                                 Binário
+
+--- SLIDE 23 ---
+Portas Lógicas
+Quais são Tabela verdade Construção Resultados Símbolos
+
+--- SLIDE 24 ---
+Tópicos genéricos
+Processador Memórias Disco Rígido Interfaces Periféricos Fonte Gabinete Monitor BIOS
+Conceitos: Armazenamento Memória CPU Barramento Interface
+
+--- SLIDE 25 ---
+Dar atenção
+Processador e seus componentes Assunto Relacionado (Threads) Memória Acesso a informação em HDs e SSd´s
+Placa mãe e principais componentes Slots de Expansão – Pci Express
+
+--- SLIDE 26 ---
+O quê, e como
+Revise os tópicos principais Não precisa decorar Atentar aos tópicos principais
+
+--- SLIDE 27 ---
+Boa sorte
+
+--- FIM DA EXTRAÇÃO ---
