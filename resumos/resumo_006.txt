@@ -1,3 +1,21 @@
-🔹 Resumo 006 - ❌ Ruído
+**RESUMO DETALHADO**
 
-Bloco classificado como ruído e descartado.
+* **Sistema de Controle de Estacionamento**
+	+ O sistema tem cancelas da entrada e saída que precisam ser desabilitadas ou habilitadas dependendo do estacionamento estar vazio ou cheio.
+	+ A cancela da entrada precisa ser habilitada quando o estacionamento está vazio e desabilitada quando está cheio.
+	+ A cancela da saída precisa ser desabilitada quando o estacionamento está vazio e habilitada quando está cheio.
+* **Sensor de Presença**
+	+ O sensor pode ser usado para detectar a presença de um carro no estacionamento e cancelar ou habilitar as cancelas da entrada e saída.
+	+ Exemplo: se o estacionamento estiver vazio, o sensor pode detectar a presença do carro e habilitar a cancela da entrada.
+* **Placa de Não-Vaga**
+	+ A placa de não-vaga precisa ser ligada quando o estacionamento estiver cheio para indicar que não há vagas disponíveis.
+	+ A placa pode ser ligada quando A e B (variáveis) forem positivas.
+* **A e B**
+	+ A e B são variáveis que precisam estar em zero para que a placa de não-vaga seja ligada.
+	+ A e B podem significar o quê? Entrada ou saída?
+	+ A e B também podem ser usadas para definir a cancela desabilitada da saída.
+
+**NOTAS**
+
+* O professor menciona a necessidade de pensar em mais questões ao criar um sistema automatizado.
+* Ele destaca a importância de ter sensores para detectar a presença de carros no estacionamento e cancelar ou habilitar as cancelas da entrada e saída.

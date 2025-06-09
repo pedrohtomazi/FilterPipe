@@ -1,3 +1,27 @@
-🔹 Resumo 011 - ✅ Útil técnico
+**Resumo Detalhado**
 
-RESUMO: O texto discute a conversão de números entre sistemas de numeração (binário e decimal) e apresenta um método para realizar essa conversão, usando uma tabela de correspondência entre valores binários e seus equivalentes decimais. Além disso, são mencionadas regras para somar números em diferentes bases numéricas.
+**Conversão de Binário para Decimal**
+
+* O professor demonstra como converter um número binário em decimal.
+* Ele explica que o processo envolve elevar a posição do número e multiplicar por 2, até chegar ao resultado final.
+
+**Exemplos**
+
+* Exemplo 1: Conversão de "001" em decimal. O professor mostra como elevar a posição e multiplicar por 2 para obter o resultado final (38).
+* Exemplo 2: Conversão de "1100112" em decimal. O professor demonstra como utilizar a correspondência entre os valores binários e seus equivalentes decimais.
+* Exemplo 3: Conversão de "23" em decimal. O professor mostra como dividir o número por 2, até chegar ao resultado final (1, 0, 1, 1, 1).
+
+**Conversão de Decimal para Binário**
+
+* O professor explica que a conversão pode ser feita dividindo o número por 2 e pegando o resto.
+* Ele demonstra como converter o número "23" em binário (1, 0, 1, 1, 1).
+
+**Regras da Conversão**
+
+* Se a soma for par, o resultado é zero e sobe 1.
+* Se a soma for ímpar, o resultado é 1 e sobe a metade que se tinha.
+
+**Observações**
+
+* O professor destaca a importância de ter um algoritmo mental para realizar as conversões.
+* Ele também menciona que é possível utilizar diferentes estratégias para converter números binários em decimais.

@@ -1,3 +1,10 @@
-🔹 Resumo 007 - ❌ Ruído
+**RESUMO DETALHADO**
 
-Bloco classificado como ruído e descartado.
+* **TABELA DE ENTRADA E SAÍDA**: A tabela apresentada é uma representação do Lógico de Lá, com 2 entradas (a e b) e 4 saídas. O professor demonstrou como construir essa tabela usando portas lógicas (NAND).
+* **CICLO DE LIGAÇÃO E DESLIGAMENTO**: O ciclo apresentado é uma sequência de luzes que mudam de verde para amarelo e, posteriormente, para vermelho. A sequência é caracterizada pelo aumento do tempo de duração das luzes.
+* **TEMPORIZAÇÃO**: A temporização é mencionada como um fator importante no ciclo, pois os veículos demoram mais tempo para parar ou acelerar.
+* **PORTAS LÓGICAS (NAND)**: O professor demonstrou como usar portas lógicas NAND para construir a tabela de entrada e saída.
+
+**SEM_INFO_UTIL**
+
+(Porque não há conteúdo técnico útil no bloco de texto)

@@ -1,3 +1,23 @@
-🔹 Resumo 002 - ❌ Ruído
+**RESUMO DETALHADO**
 
-Bloco classificado como ruído e descartado.
+* **Porta XNORC (Coincidência)**: A porta XNORC é uma porta lógica que verifica se duas variáveis são iguais. Se as variáveis forem iguais, a saída será 0.
+* **Entrada padrão**: A entrada padrão da porta XNORC é representada por B (100).
+* **Operação**: A operação da porta XNORC é a negação da entrada A (0101) e a entrada B (100). Se a entrada A for 0, a saída será 1.
+* **Saída negada**: A saída negada da porta XNORC é representada por Z (1).
+* **Porta X2**: A porta X2 é uma porta lógica que inverte as entradas A e B.
+* **Operação do ou**: A operação do ou entre as portas X1 e X2 produz a saída 0, 0, 0 e 0, 0, 1.
+
+**CONCEITOS**
+
+* **Porta lógica**: Uma porta lógica é uma unidade básica que processa informações lógicas.
+* **Entrada**: A entrada de uma porta lógica é a variável que é verificada pela porta.
+* **Saída**: A saída de uma porta lógica é o resultado da operação realizada pela porta.
+
+**EXEMPLOS**
+
+* Exemplo 1: Se a entrada A for 0 e a entrada B for 100, a saída da porta XNORC será 1.
+* Exemplo 2: Se as entradas A e B forem iguais (0101), a saída da porta XNORC será 0.
+
+**RACIOÇO**
+
+* O raciocínio é o processo de pensamento que envolve a análise das informações e a aplicação de regras lógicas para chegar a uma conclusão.

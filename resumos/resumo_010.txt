@@ -1,3 +1,12 @@
-🔹 Resumo 010 - ❌ Ruído
+**Resumo Detalhado**
 
-Bloco classificado como ruído e descartado.
+* **Sistema Posicional**: O sistema posicional é um sistema de numeração que utiliza a posição dos algarismos para representar valores. Exemplo: o número 40 pode ser decomposto como 4 × 10^1 + 0.
+* **Exponenciação**: A exponenciação é utilizada para elevar um número à potência de outro. Por exemplo, o número 5 elevado à potência de 2 é igual a 25.
+* **Sistema Decimal**: O sistema decimal é composto por 10 algarismos (0-9) e utiliza a posição dos algarismos para representar valores.
+* **Sistema Binário**: O sistema binário é composto por apenas dois algarismos (0 e 1) e também utiliza a posição dos algarismos para representar valores.
+
+**Observações**
+
+* A discussão sobre o sistema posicional e exponenciação foi utilizada para ilustrar como os sistemas de numeração podem ser decompostos e recompilados.
+* O professor mencionou que o Arduino pode ser utilizado para controlar a saída de um circuito, programando o tempo de duração da saída.
+* A importância do sistema posicional foi destacada, pois permite que os números sejam decompostos e recompilados para obter resultados diferentes.

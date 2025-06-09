@@ -1,3 +1,13 @@
-🔹 Resumo 003 - ✅ Útil técnico
+**Resumo Detalhado**
 
-Resumo: O texto discute sobre lógica digital e circuitos, apresentando exemplos de simplificação de circuitos utilizando portas lógicas como NOR e AND. Além disso, é mencionado o uso de sensores para detectar a temperatura e potência, bem como a representação de estados lógicos com 0 (desligado) e 1 (ligado).
+* **Mapa de Carnuto**: um mapa simplificado que ajuda a mostrar mudanças e simplificações no circuito lógico. Isso permite obter o mesmo resultado com menos componentes.
+* **Porta Lógica**: uma porta lógica é uma unidade básica que executa operações lógicas, como AND (E), OR (OU) ou NOT (NÃO). Elas podem ser usadas para criar circuitos mais complexos.
+* **Simplificação de Circuito**: a simplificação do circuito lógico ajuda a reduzir o tamanho e a complexidade do circuito, tornando-o mais fácil de entender e implementar.
+* **Porta NOR (NÃO OU)**: uma porta NOR é uma porta lógica que produz saída 1 apenas se todas as entradas forem 0. Ela pode ser usada para criar um circuito que negue a saída quando uma ou mais entradas forem 1.
+* **Porta AND (E)**: uma porta AND é uma porta lógica que produz saída 1 apenas se todas as entradas forem 1. Ela pode ser usada para criar um circuito que execute operações E entre várias entradas.
+* **Porta NOT (NÃO)**: uma porta NOT é uma porta lógica que inverte a entrada, tornando 0 em 1 e vice-versa. Ela pode ser usada para negar a saída de um circuito.
+* **Sistemas de Sensores**: o texto menciona sistemas de sensores que detectam temperatura e potência, e que podem ser usados para controlar bombas e LEDs.
+
+**Observações**
+
+O texto apresenta uma discussão sobre mapas de Carnuto, portas lógicas e simplificação de circuitos. Ele também aborda sistemas de sensores e sua aplicação em controles de bombas e LEDs.

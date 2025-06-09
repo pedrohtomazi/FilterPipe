@@ -1,3 +1,3 @@
-🔹 Resumo 013 - ✅ Útil técnico
+**RESUMO DETALHADO**
 
-Processador: responsável por executar microcódigos no LAN.
+* **Processador**: responsável por executar microcódigos no LAN (Local Area Network).

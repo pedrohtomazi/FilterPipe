@@ -1,3 +1,13 @@
-🔹 Resumo 012 - ❌ Ruído
+**Resumo Detalhado**
 
-Bloco classificado como ruído e descartado.
+* **Sistema Binário**: O professor explica que o sistema binário é baseado em 0 e 1, e que quando se faz uma conta no decimal, é preciso lembrar que está trabalhando com o sistema decimal (10).
+* **Porta Lógica**: A tabela de porta lógica é apresentada como um exemplo de como funciona a lógica binária.
+* **Processador**: O processador é descrito como o componente que executa as instruções da fonte, e que é composto por componentes como memória, interface e periférico.
+* **Memória**: A memória é apresentada como um componente do processador que armazena informações e permite a troca de dados entre os diferentes componentes do sistema.
+* **Interface**: O interface é descrito como o componente que conecta o processador às outras partes do sistema, permitindo a comunicação entre eles.
+* **PCI Express**: O PCI Express é apresentado como um exemplo de barramento que permite o controle sobre as informações transmitidas e recebidas.
+
+**Observações**
+
+* A conversa informal e pessoal foi ignorada, pois não há conteúdo técnico útil nessa parte do texto.
+* A saída direta é o resumo detalhado acima.

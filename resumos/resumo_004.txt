@@ -1,9 +1,21 @@
-🔹 Resumo 004 - ✅ Útil técnico
+**RESUMO DETALHADO**
 
-Resumo:
+* **Sistemas de Controle**: O professor discute a importância de identificar as portas (entradas) e saídas em um sistema de controle. Ele destaca que os sensores A0 e B1 devem estar acionados para que o LED vermelho seja ligado.
+* **Portas E Saídas**: O professor explica que a porta E é uma condicional que requer ambos os sensores (A e B) estarem acionados. Ele também destaca a importância de inverter as portas quando necessário, como no caso do LED branco.
+* **Tabelas de Verificação**: O professor apresenta exemplos de tabelas para verificar as saídas do sistema. Ele destaca que é importante identificar as entradas e saídas corretamente para que o sistema funcione corretamente.
+* **Alarme**: O professor discute a importância do alarme em um sistema de controle. Ele apresenta exemplos de como o alarme pode ser associado aos sensores A e B, e como isso pode disparar a saída do LED representando o envio da foto.
+* **Associatividade**: O professor destaca a importância de associar as saídas dos sensores com o alarme. Ele apresenta exemplos de como isso pode ser feito, e como isso pode resultar em uma saída verdadeira.
 
-* O texto é sobre identificar as portas e saídas de um sistema de alarme com dois sensores (A e B) e quatro LEDs (branco, azul, vermelho e verde).
-* A condicional para que o alarme seja disparado é quando ambos os sensores (A e B) estiverem acionados.
-* O alarme está associado ao sensor de movimento e só será ativado se o alarme estiver ligado e o sensor de movimento estiver acionado.
+**EXEMPLOS NUMÉRICOS**
 
-RUÍDO_DESCARTAR
+* A0 e B1: Sensores vermelhos
+* LED branco: Liga quando está em 0 (necessita inverter)
+* LED verde: Liga quando A é 1 (não necessita inverter)
+* LED azul: Liga quando A é 0 (necessita inverter)
+* Alarme: Ligado e desligado
+
+**RACIOÇO DO PROFESSOR**
+
+* O professor destaca a importância de identificar as portas e saídas corretamente para que o sistema funcione corretamente.
+* Ele apresenta exemplos de tabelas para verificar as saídas do sistema, e como isso pode ajudar a identificar os problemas no sistema.
+* O professor destaca a importância da associatividade entre as saídas dos sensores e o alarme.

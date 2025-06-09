@@ -1,36 +1,74 @@
-Aqui está o documento Markdown final e corrigido:
+Aqui está o resumo detalhado dos conteúdos técnicos presentes no texto:
 
-# 📘 Resumo Final – Aula Xiscatti
+### 📌 Resumo 001 - Introdução ao sistema de numeração binário
 
-## 🧠 Portas Lógicas
+* Discussão sobre a importância do sistema de numeração binário em eletrônica e programação.
+* Explicação básica sobre o sistema binário e sua relação com o sistema decimal.
 
-### 📌 Resumo 001
+### 📌 Resumo 002 - Sistema Posicional e Exponenciação
 
-Resumo:
+* Discussão sobre o sistema posicional e como é utilizado para representar valores numéricos.
+* Explicação sobre a exponenciação e sua aplicação em eletrônica e programação.
+* Exemplos de conversões entre sistemas de numeração.
 
-O conteúdo técnico útil presente no texto é relacionado a lógica booleana e eletrônica. O professor apresenta conceitos como portas-LOJA, operações AND e OR, negação de entrada e saída, e como essas operações afetam a saída final. Ele também menciona o uso de componentes eletrônicos e projetos de circuito em projetos práticos, como o carrinho de seguidor de linha controlado por Arduino.
+### 📌 Resumo 003 - Conversão de Binário para Decimal
 
-Portanto, minha resposta é: "lógica booleana, eletrônica"
-——————————————————————————————————————————————————
+* Discussão sobre como converter um número binário em decimal.
+* Explicação do processo de elevação da posição do número e multiplicação por 2.
+* Exemplos práticos de conversões de binário para decimal.
 
-### 📌 Resumo 003
+### 📌 Resumo 004 - Conversão de Decimal para Binário
 
-Resumo: O texto discute sobre lógica digital e circuitos, apresentando exemplos de simplificação de circuitos utilizando portas lógicas como NOR e AND. Além disso, é mencionado o uso de sensores para detectar a temperatura e potência, bem como a representação de estados lógicos com 0 (desligado) e 1 (ligado).
-——————————————————————————————————————————————————
+* Discussão sobre como converter um número decimal em binário.
+* Explicação do processo de divisão do número por 2 e obtenção do resto.
+* Exemplos práticos de conversões de decimal para binário.
 
-### 📌 Resumo 004
+### 📌 Resumo 005 - Técnicas de Programação
 
-Resumo:
+* Discussão sobre técnicas de programação para controlar a saída de um circuito.
+* Explicação sobre o uso de instruções e loops em linguagens de programação.
+* Exemplos práticos de programação.
 
-O texto apresenta um sistema de alarme com dois sensores (A e B) e quatro LEDs (branco, azul, vermelho e verde). A condicional para que o alarme seja disparado é quando ambos os sensores (A e B) estiverem acionados. O alarme está associado ao sensor de movimento e só será ativado se o alarme estiver ligado e o sensor de movimento estiver acionado.
-——————————————————————————————————————————————————
+### 📌 Resumo 006 - Sistema de Controle de Estacionamento
 
-### 📌 Resumo 011
+* Discussão sobre o sistema de controle de estacionamento e suas componentes (sensor de presença, cancela da entrada e saída).
+* Explicação sobre como o sensor de presença detecta a presença de um carro no estacionamento.
 
-Resumo: O texto discute a conversão de números entre sistemas de numeração (binário e decimal) e apresenta um método para realizar essa conversão, usando uma tabela de correspondência entre valores binários e seus equivalentes decimais. Além disso, são mencionadas regras para somar números em diferentes bases numéricas.
-——————————————————————————————————————————————————
+### 📌 Resumo 007 - Placa de Não-Vaga
 
-### 📌 Resumo 013
+* Discussão sobre a placa de não-vaga e sua funcionalidade.
+* Explicação sobre como a placa é ligada quando o estacionamento está cheio.
 
-Resumo: O processador é responsável por executar microcódigos no sistema. Não há questões ativas na prova.
-——————————————————————————————————————————————————
+### 📌 Resumo 008 - REGRA DE TRÂNSITO
+
+* Discussão sobre a importância da atenção ao dirigir.
+* Explicação sobre as cinco classes de motoristas que estão tornando o trânsito complicado.
+* Exemplos práticos de problemas de trânsito.
+
+### 📌 Resumo 009 - Técnicas de Conversão
+
+* Discussão sobre técnicas de conversão entre sistemas de numeração.
+* Explicação sobre como converter um número binário em decimal e vice-versa.
+* Exemplos práticos de conversões.
+
+### 📌 Resumo 010 - Sistema Posicional e Exponenciação (Continuação)
+
+* Discussão sobre a importância do sistema posicional e exponenciação em eletrônica e programação.
+* Explicação sobre como utilizar o sistema posicional e exponenciação para resolver problemas.
+
+### 📌 Resumo 011 - Porta Lógica
+
+* Discussão sobre a porta lógica e sua funcionalidade.
+* Explicação sobre como a porta lógica é utilizada em eletrônica e programação.
+* Exemplos práticos de portas lógicas.
+
+### 📌 Resumo 012 - Processador e Memória
+
+* Discussão sobre o processador e sua funcionalidade.
+* Explicação sobre como a memória armazena informações e permite a troca de dados entre os diferentes componentes do sistema.
+
+### 📌 Resumo 013 - Processador (Continuação)
+
+* Discussão sobre o processador e sua responsabilidade por executar microcódigos no LAN.
+
+Essas são as resumos detalhados dos conteúdos técnicos presentes no texto.

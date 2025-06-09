@@ -1,3 +1,15 @@
-🔹 Resumo 005 - ❌ Ruído
+**RESUMO DETALHADO**
 
-Bloco classificado como ruído e descartado.
+* **Sistemas de Alarme**: O professor discute sobre um sistema de alarme em sua casa que começou a disparar após mudanças recentes. Ele menciona que o alarme está desligado quando não há movimento e apenas piscava na escuridão.
+* **Sensores do Estacionamento**: O professor explica que os sensores do estacionamento (a e b) são responsáveis por detectar a presença de carros no estacionamento. Se o estacionamento está vazio, a cancela da saída fica desabilitada.
+* **Morcegos**: O professor conta uma história sobre um morcego que habitava em seu teto e como ele foi capturado e morto.
+
+**NÃO-TECNICO**
+
+* Conversas informais
+* Anedotas
+* Opiniões
+
+**RESPOSTA FINAL**
+
+Resumo detalhado dos conteúdos técnicos presentes no texto.
